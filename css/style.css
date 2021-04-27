@@ -157,3 +157,177 @@ header .navbar .boxright .searchbar i{
   font-size: 17px;
   font-weight: bold;
 }
+
+/*  */
+#jumbo-img{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 10px;
+  height: 400px;
+}
+
+#jumbo-img div{
+  width: 50%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 450px;
+  margin-top: -200px;
+  box-shadow: 10px 10px 10px  rgba(165, 134, 134, 0.275);
+}
+
+#jumbo-img div img#img-center {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#jumbo-img div img#img-center-yt {
+  position: absolute;
+  left: 53%;
+  top: 45%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+#jumbo-img img.img-left{
+  margin-left: 22px;
+  margin-top: -250px;
+  height: 450px;
+}
+
+#jumbo-img img.img-right{
+  margin-left: 1100px;
+  margin-top: -291px;
+  height: 350px;
+}
+
+
+#infotext-top{
+  color: #333333;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#infotext-top h3{
+  width: 900px;
+  font-size: 30px;
+  text-align: center;
+  margin: 70px 0px 35px;
+}
+
+#infotext-top p{
+  color: #7e7e7e;
+  font-size: 14px;
+  margin: 10px;
+}
+
+/* STYLE CCS: Info number  */
+#number-info{
+  display: flex;
+  margin: 70px;
+}
+
+#number-info .number-info-element{
+  width: 100%;
+  margin: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#number-info .number-info-element p{
+  color: #20ad96;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#number-info .number-info-element span{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*  */
+
+#box-service{
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+#box-service .box-services-left{
+  flex-basis: 40%;
+  display: flex;
+}
+
+#box-service .box-services-left .service .top, .bottom{
+  margin: 15px;
+  padding:5px 10px;
+  box-shadow: 10px 10px 10px  lightgray;
+  width: 300px;
+}
+
+#box-service .box-services-left .service .top, .bottom h4 {
+  color: #3F3A64;
+}
+
+#box-service .box-services-left .right{
+  margin-top: 45px;
+}
+
+  /*  */
+
+.box-services-right{
+  flex-basis: 40%;
+}
+
+.box-services-right p{
+  margin: 10px 0px;
+  color: #696969;
+}
+
+.box-services-right h1{
+  width: 350px;
+  font-size: 45px;
+  margin-bottom: 40px;
+
+}
+
+.box-services-right h1 span{
+  color: #1fad96;
+}
+
+.box-services-right ul{
+  list-style: none;
+}
+
+.box-services-right ul li{
+  margin: 10px 0px;
+  color: #696969;
+}
+
+.box-services-right ul li i{
+  color: #1fad96;
+  margin-right: 5px;
+}
+
+.box-services-right button{
+  padding: 17px 45px;
+  background-color: #1fad96;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.box-services-right button:focus{
+  outline: none;
+}
+
+.box-services-right button:hover{
+  background-color: #293259;
+}

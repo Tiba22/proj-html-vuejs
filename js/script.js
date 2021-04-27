@@ -29,7 +29,32 @@ function initVue() {
           menu: ['Lorem Ipsum','Lorem Ipsum','Lorem Ipsum']
         }
       ],
-    counter: null,
+
+      numberInfo: [
+        {
+          number: '1.926',
+          info:'FINISHED SESSIONS'
+        },
+        {
+          number: '3.092+',
+          info:'ENROLLED LEARNERS'
+        },
+        {
+          number: '200',
+          info:'ONLINE INSTRUCTORS'
+        },
+        {
+          number: '100%',
+          info:'SATISFACTION RATE'
+        }
+      ],
+      checks: [
+        'Select & customize courses to your preferences','Change the tutor and make arrangements',
+        'Participate in events to join others',
+        'Get the desired certificate delivered at house'
+      ],
+      
+      counter: null,
     },
 
 
@@ -40,7 +65,6 @@ function initVue() {
     }
   });
 }
-
 
 function init() {
   initVue();

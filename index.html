@@ -58,12 +58,82 @@
           <button>Get started for free</button>
 
         </div>
+      </header>
 
+      <div id="jumbo-img">
+
+        <img class="img-left" src="img/home-6-hero-left-person.png" alt="">
+
+        <div>
+          <img id="img-center" src="img/home-6-hero-poster-final.jpg" alt="">
+          <img id="img-center-yt" src="img/icon-youtube-play.png" alt="">
+        </div>
+
+        <img class="img-right" src="img/home-6-hero-right-person-195x300.png" alt="">
 
       </div>  <!-- Fine box-jumbo -->
-    </header>
+
+      <main>
+        <div id="infotext-top" class="w70">
+          <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable</h3>
+          <h5>FANNIE MOREDN</h5>
+          <p>/Founder & CEO</p>
+
+          <div id="number-info">
+            <div v-for='info in numberInfo' class="number-info-element">
+              <p>{{info.number}}</p>
+              <span>{{info.info}}</span>
+            </div>
+          </div>
+
+          <div id="box-service">
+
+            <div class="box-services-left w70">
+
+              <div class="service">
+
+                <div class="top">
+                  <h4>Graphic Design</h4>
+                  <p>Have a passion for graphics and arts? show you talents with confidence and salf-assertiveness.</p>
+                  <img src="img/home-6-service-image-01.png" alt="">
+                </div>
+
+                <div class="bottom">
+                  <img src="img/home-6-service-image-03.png" alt="">
+                  <h4>Idea Discussion</h4>
+                  <p>Get teamed up with the specialists who work and teach coding for years at famous universities.</p>
+                </div>
+              </div>
+
+              <div class="service right">
+
+                <div class="top">
+                  <h4>Business Administration</h4>
+                  <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
+                  <img src="img/home-6-service-image-02.png" alt="">
+                </div>
+
+                <div class="bottom">
+                  <img src="img/home-6-service-image-04.png" alt="">
+                  <h4>Web Development</h4>
+                  <p>Learn to strat building a webpage from scratch. Yuo decide you own pace, course and speed.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-services-right">
+              <p>TOGETHER WE CAN CREATE</p>
+              <h1>Services We <span>Can Provide</span> For My Clients.</h1>
+              <ul>
+                <li v-for = 'check in checks'><i class="fas fa-check"></i><span>{{check}}</span></li>
+              </ul>
+              <button>Get started for free</button>
+            </div>
+          </div>
+        </div>  <!-- Fine infotext top -->
+      </main>
 
 
-  </div>
-</body>
-</html>
+    </div>
+  </body>
+  </html>
