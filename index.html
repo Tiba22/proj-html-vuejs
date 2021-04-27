@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>MaxCoach Remote Training</title>
+
+  <!-- Lato Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous"/>
+
+  <!-- JS -->
+  <script src="js/script.js" charset="utf-8"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+
+  <div id="app">
+
+    <header>
+      <div class="navbar w70">
+        <img src="img/light-logo.png" alt="">
+        <div class="boxright">
+          <ul>
+            <li v-for='(menù, index) in navBar'>
+              <span>{{menù.type}}</span>
+              <i @click='openMenù(index)' class="fas fa-angle-down"></i>
+              <ul :class='(counter == index) ? "show" : "hide"' >
+                <li v-for = '(tendina, i) in menù.menu'>{{tendina}}</li>
+              </ul>
+            </li>
+          </ul>
+          <i class="cart fas fa-shopping-cart"><i class="fas fa-circle"><span>0</span></i></i>
+          <i class="far fa-user-circle"></i>
+          <div class="searchbar">
+            <input type="text" placeholder="Search..." name="" id="">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>   <!-- Fine Navbar -->
+
+      <div class="box-jumbo">
+
+        <div id="info-jumbo">
+
+          <h1>Learn At Your Own Pace</h1>
+          <p>Get teamed up with people of the same will.</p>
+          <button>Get started for free</button>
+
+        </div>
+
+
+      </div>  <!-- Fine box-jumbo -->
+    </header>
+
+
+  </div>
+</body>
+</html>

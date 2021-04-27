@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato'
+}
+
+.w70 {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  height: 650px;
+  background-color: #1f2154;
+  padding-top: 10px;
+}
+
+header .navbar{
+  padding: 10px 100px;
+  margin: auto;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar img{
+  height: 30px;
+  margin-right: 80px ;
+}
+
+header .navbar .boxright{
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .boxright ul {
+  display: flex;
+  list-style: none;
+}
+
+header .navbar .boxright ul li {
+  margin: 10px;
+  color:white;
+  cursor: pointer;
+}
+
+header .navbar .boxright ul li span{
+  margin-right: 2px;
+}
+
+header .navbar .boxright ul li span:hover{
+  text-decoration: underline white;
+}
+
+header .navbar .boxright ul li ul {
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.371);
+  margin-top: 15px;
+}
+
+header .navbar .boxright ul li ul li:hover{
+  text-decoration: underline white;
+}
+
+header .navbar .boxright i {
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+header .navbar .boxright i.cart{
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+header .navbar .boxright i.cart i{
+  position: absolute;
+  margin-top:  -10px;
+  margin-left: -6px;
+}
+
+header .navbar .boxright i.cart span{
+  position: absolute;
+  color: black;
+  margin-top: 2px;
+  margin-left: -11.5px;
+  font-size: 13px;
+}
+
+header .navbar .boxright .searchbar{
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+header .navbar .boxright .searchbar input{
+  border: none;
+  font-size: 15px;
+}
+
+header .navbar .boxright .searchbar input:focus{
+  outline: none;
+}
+
+header .navbar .boxright .searchbar i{
+  color: #1fad96;
+}
+
+.hide{
+  opacity: 0;
+}
+
+.show{
+  opacity: 1;
+}
+
+/* Fine NavBar */
+
+.box-jumbo{
+  height: 571px;
+  overflow:hidden ;
+}
+
+.box-jumbo #info-jumbo{
+  margin: auto;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding-top: 100px;
+}
+
+.box-jumbo #info-jumbo h1{
+  font-size: 50px;
+}
+
+.box-jumbo #info-jumbo p{
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #bcbccb;
+}
+
+.box-jumbo #info-jumbo button{
+  padding: 20px 40px;
+  background-color: #1fad96;
+  color: white;
+  border-radius: 6px;;
+  border: none;
+  margin-top: 40px;
+  font-size: 17px;
+  font-weight: bold;
+}
