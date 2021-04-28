@@ -74,7 +74,7 @@
       </div>  <!-- Fine box-jumbo -->
 
       <main>
-        <div id="infotext-top" class="w70">
+        <div id="main-top" class="w70">
           <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable</h3>
           <h5>FANNIE MOREDN</h5>
           <p>/Founder & CEO</p>
@@ -92,13 +92,13 @@
 
               <div class="service">
 
-                <div class="top">
+                <div class="cardtop">
                   <h4>Graphic Design</h4>
-                  <p>Have a passion for graphics and arts? show you talents with confidence and salf-assertiveness.</p>
+                  <p>Have a passion for graphics and arts? show you talents with confidence and self-assertiveness.</p>
                   <img src="img/home-6-service-image-01.png" alt="">
                 </div>
 
-                <div class="bottom">
+                <div class="cardbottom">
                   <img src="img/home-6-service-image-03.png" alt="">
                   <h4>Idea Discussion</h4>
                   <p>Get teamed up with the specialists who work and teach coding for years at famous universities.</p>
@@ -107,21 +107,21 @@
 
               <div class="service right">
 
-                <div class="top">
+                <div class="cardtop">
                   <h4>Business Administration</h4>
                   <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
                   <img src="img/home-6-service-image-02.png" alt="">
                 </div>
 
-                <div class="bottom">
+                <div class="cardbottom">
                   <img src="img/home-6-service-image-04.png" alt="">
                   <h4>Web Development</h4>
-                  <p>Learn to strat building a webpage from scratch. Yuo decide you own pace, course and speed.</p>
+                  <p>Learn to start building a webpage from scratch. You decide you own pace, course and speed.</p>
                 </div>
               </div>
             </div>
 
-            <div class="box-services-right">
+            <div class="serviceright">
               <p>TOGETHER WE CAN CREATE</p>
               <h1>Services We <span>Can Provide</span> For My Clients.</h1>
               <ul>
@@ -130,7 +130,54 @@
               <button>Get started for free</button>
             </div>
           </div>
-        </div>  <!-- Fine infotext top -->
+
+          <div id="containerCourses">
+
+            <!-- CONTAINER: Text course intro  -->
+            <div class="textCourses">
+              <p>CHOOSE A COURSE TO GET STARTED</p>
+              <h2>Latest Featured <span>Courses</span></h2>
+            </div>
+
+            <div id="cardCourses" class="w70">
+              <div v-for='corsi in courses' class="course">
+                <img :src="'img/' + corsi.img " alt="">
+                <div class="info-course">
+                  <p id="price">{{corsi.price}}</p>
+                  <h4>{{corsi.info}}</h4>
+                  <p><span><i class="fas fa-atlas"></i> {{corsi.infoCourse[0]}}</span> <span><i class="far fa-user"></i> {{corsi.infoCourse[1]}}</span></p>
+                </div>
+              </div>
+            </div>
+            <button> View all courses <i class="fas fa-arrow-right"></i>
+            </button>
+          </div> <!-- fine containerCourses -->
+
+          <div id="testimonial">
+
+            <h2>Why People Talk About <span>MaxCoach</span>?</h2>
+
+            <div class="box-testimonial w70">
+
+              <div class="imgTestimonial">
+                <img class="sopra" src='img/testimonial-avata-02.jpg' alt="Foto testimonial">
+              </div>
+
+              <div class="info-testimonial">
+                <p class="info-member">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
+                <span class="name-testimonial">MINA HOLLACE</span>
+                <p>/ Freelancer</p>
+              </div>
+            </div>
+
+            <div id="box-clients" class="w70">
+              <img v-for='client in clients' :src="'img/' + client" alt="Loghi">
+            </div>
+
+          </div> <!-- Fine testimonial -->
+
+
+        </div>  <!-- Fine main top -->
       </main>
 
 

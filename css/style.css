@@ -203,7 +203,7 @@ header .navbar .boxright .searchbar i{
 }
 
 
-#infotext-top{
+#main-top{
   color: #333333;
   width: 100%;
   margin-top: 60px;
@@ -212,14 +212,14 @@ header .navbar .boxright .searchbar i{
   align-items: center;
 }
 
-#infotext-top h3{
+#main-top h3{
   width: 900px;
   font-size: 30px;
   text-align: center;
   margin: 70px 0px 35px;
 }
 
-#infotext-top p{
+#main-top p{
   color: #7e7e7e;
   font-size: 14px;
   margin: 10px;
@@ -263,15 +263,24 @@ header .navbar .boxright .searchbar i{
   display: flex;
 }
 
-#box-service .box-services-left .service .top, .bottom{
+#box-service .box-services-left .service .cardtop, .cardbottom{
   margin: 15px;
   padding:5px 10px;
-  box-shadow: 10px 10px 10px  lightgray;
+  box-shadow: 10px 10px 10px #ccc;
   width: 300px;
 }
 
-#box-service .box-services-left .service .top, .bottom h4 {
+#box-service h4 {
+  font-size: 23px;
   color: #3F3A64;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#box-service .box-services-left .service .cardtop p,
+#box-service .box-services-left .service .cardbottom p {
+  color: #696969;
+  font-size: 15px;
 }
 
 #box-service .box-services-left .right{
@@ -280,41 +289,41 @@ header .navbar .boxright .searchbar i{
 
   /*  */
 
-.box-services-right{
+.serviceright{
   flex-basis: 40%;
 }
 
-.box-services-right p{
+.serviceright p{
   margin: 10px 0px;
   color: #696969;
 }
 
-.box-services-right h1{
+.serviceright h1{
   width: 350px;
   font-size: 45px;
   margin-bottom: 40px;
 
 }
 
-.box-services-right h1 span{
+.serviceright h1 span{
   color: #1fad96;
 }
 
-.box-services-right ul{
+.serviceright ul{
   list-style: none;
 }
 
-.box-services-right ul li{
+.serviceright ul li{
   margin: 10px 0px;
   color: #696969;
 }
 
-.box-services-right ul li i{
+.serviceright ul li i{
   color: #1fad96;
   margin-right: 5px;
 }
 
-.box-services-right button{
+.serviceright button{
   padding: 17px 45px;
   background-color: #1fad96;
   color: white;
@@ -324,10 +333,173 @@ header .navbar .boxright .searchbar i{
   font-weight: bold;
 }
 
-.box-services-right button:focus{
+.serviceright button:focus{
   outline: none;
 }
 
-.box-services-right button:hover{
+.serviceright button:hover{
   background-color: #293259;
+}
+
+/*  */
+
+#containerCourses{
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: #F5F7FA;
+}
+
+#containerCourses .textCourses{
+  margin: 50px;
+}
+
+#containerCourses .textCourses h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#containerCourses .textCourses h2 span{
+  color: #1fad96;
+  font-weight: normal;
+}
+
+#cardCourses{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#cardCourses .course{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#cardCourses .course img{
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  object-fit: cover
+}
+
+#cardCourses .course .info-course{
+  width: 300px;
+  text-align: left;
+  margin-left: 35px;
+}
+
+#cardCourses .course:hover{
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#cardCourses .course .info-course #price{
+  color: #1fad96;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+#cardCourses .course .info-course h4 {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3F3A64;
+  line-height: 30px;
+}
+
+#cardCourses .course .info-course p span{
+  margin-right: 10px;
+}
+
+#containerCourses button{
+  padding: 17px 60px;
+  background-color: #1fad96;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+#containerCourses button:focus{
+  outline: none;
+}
+
+#containerCourses button:hover{
+  background-color: #293259;
+}
+
+#containerCourses button i {
+  margin-left: 5px;
+}
+
+/*  */
+
+#testimonial{
+  margin: 50px;
+  padding: 20px;
+}
+
+#testimonial h2{
+  margin: 30px;
+  text-align: center;
+  font-size: 45px;
+}
+
+#testimonial h2 span {
+  color: #1fad96;
+  font-weight: normal;
+}
+
+#testimonial .box-testimonial {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#testimonial .box-testimonial .imgTestimonial img.sopra {
+  width: 200px;
+  border-radius: 100%;
+}
+
+#testimonial .box-testimonial .info-testimonial {
+  width: 44%;
+  margin: 30px 50px;
+}
+
+#testimonial .box-testimonial .info-testimonial .info-member {
+  margin: -20px 0px 20px;
+  font-size: 30px;
+  color: black;
+}
+
+#testimonial .box-testimonial .info-testimonial .name-testimonial {
+  font-weight: bold;
+}
+
+#testimonial .box-testimonial .info-testimonial p{
+  margin: 10px 0px;
+  color: #7e7e7e;
+}
+
+  /*  */
+
+#box-clients{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+#box-clients img{
+  cursor: pointer;
+  object-fit: contain;
+}
+
+#box-clients img:hover{
+
 }
