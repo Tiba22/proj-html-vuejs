@@ -76,7 +76,7 @@
       <main>
         <div id="main-top" class="w70">
           <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable</h3>
-          <h5>FANNIE MOREDN</h5>
+          <h5>FANNIE MORENO</h5>
           <p>/Founder & CEO</p>
 
           <div id="number-info">
@@ -157,30 +157,90 @@
 
             <h2>Why People Talk About <span>MaxCoach</span>?</h2>
 
-            <div class="box-testimonial w70">
+            <div class="divTestimonial w70">
 
               <div class="imgTestimonial">
                 <img class="sopra" src='img/testimonial-avata-02.jpg' alt="Foto testimonial">
               </div>
 
-              <div class="info-testimonial">
-                <p class="info-member">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
+              <div class="infoTestimonial">
+                <p class="infoMember">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
                 <span class="name-testimonial">MINA HOLLACE</span>
                 <p>/ Freelancer</p>
               </div>
             </div>
 
-            <div id="box-clients" class="w70">
+            <div id="imgClients" class="w70">
               <img v-for='client in clients' :src="'img/' + client" alt="Loghi">
             </div>
 
           </div> <!-- Fine testimonial -->
 
+          <div id="container-ourBlogs">
+
+            <div class="blogsText">
+              <p>ENJOY READING ON MAXCOACH</p>
+              <h2>Latest on <span>Our Blogs</span> </h2>
+            </div>
+
+            <div class="cardBlogs w70">
+              <div v-for='blog in blogs' class="box-blog">
+                <img :src="'img/' + blog.img " alt="">
+                <p>{{blog.class}}</p>
+                <h4>{{blog.info}}</h4>
+                <p><span><i class="far fa-calendar"></i>{{blog.view[0]}}</span><span><i class="far fa-eye"></i>{{blog.view[1]}}</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="help">
+            <div class="help-text">
+              <p>WANNA TRANSFORM YOU LIFE?</p>
+              <h2>Glad to <span>Help You</span> Learn</h2>
+            </div>
+            <div class="containerHelp w70">
+              <div v-for='help in linkHelps' class="help-type">
+                <i :class= "help.icon"></i>
+                <h4>{{help.type}}</h4>
+                <p>{{help.info}}</p>
+              </div>
+            </div>
+            <img class="center" src="img/home-6-services-image-1024x411.png" alt="">
+          </div>
+
+          <div id="startNow">
+            <h4>Start today for getting <span>Online Certification</span> </h4>
+            <h2>You can be your own guilding start with our help!</h2>
+            <button>Get started now</button>
+          </div>
 
         </div>  <!-- Fine main top -->
       </main>
 
+      <footer>
 
-    </div>
+        <div class="containerFooter">
+
+          <div class="footerTop">
+            <div v-for= 'info in infoFooter' class="info-page-footer">
+              <h3>{{info.id}}</h3>
+              <ul>
+                <li v-for= 'listaInfo in info.address'>{{listaInfo}}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footerIcon">
+            <i v-for='icon in iconsSocial' :class="icon"></i>
+          </div>
+          <div class="copyright">
+            <p>© 2020 Maxcoach. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>  <!-- Fine div App -->
   </body>
   </html>

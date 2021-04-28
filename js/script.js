@@ -3,7 +3,7 @@ function initVue() {
   var app = new Vue ({
     el: "#app",
     data: {
-      navBar:[
+      navBar: [
         {
           type: 'Home',
           menu: ['Lorem Ipsum','Lorem Ipsum','Lorem Ipsum']
@@ -55,7 +55,7 @@ function initVue() {
         'Get the desired certificate delivered at house'
       ],
 
-      courses:[
+      courses: [
         {
           img: 'finance-course-thumbnail-04-480x298.jpg',
           price: 'Free',
@@ -93,6 +93,7 @@ function initVue() {
           infoCourse: ['6 Lessons','51 Students'],
         }
       ],
+
       clients: [
         'client-logo-colored-01.png',
         'client-logo-colored-02.png',
@@ -100,6 +101,92 @@ function initVue() {
         'client-logo-colored-04.png',
         'client-logo-colored-05.png',
         'client-logo-colored-06.png'
+      ],
+
+      blogs: [
+        {
+          img: 'home-personal-finance-blog-03-480x325.jpg',
+          class: 'BUSINESS',
+          info: 'Ten Benefits Of Rentals That May Change Your Perspective',
+          view: [' Dec 28, 2020', ' 1062 views']
+        },
+        {
+          img: 'home-personal-finance-blog-02-480x325.jpg',
+          class: 'BUSINESS',
+          info: '10 Things Successful Mompreneurs Do Different',
+          view: [' Dec 28, 2020', ' 1025 views']
+        },
+        {
+          img: 'home-personal-finance-blog-01-480x325.jpg',
+          class: 'BUSINESS',
+          info: 'How Stay Calm from the First Time.',
+          view: [' Dec 28, 2020', ' 901 views']
+        }
+      ],
+
+      linkHelps: [
+        {
+          icon:'far fa-flag',
+          type: 'Idea Discussion',
+          info: 'Get teamed up with the specialists who work and teach coding for years at famous universities.'
+        },
+        {
+          icon:'fas fa-cog',
+          type: 'Web Development',
+          info: 'Learn to start building a wabpage from scratch. You decide your own pace, course and speed.'
+        },
+        {
+          icon:'far fa-life-ring',
+          type: 'System Administration',
+          info: 'Learners are encouraged to study the mechanism and structure of system administration.'
+        },
+        {
+          icon:'fas fa-tv',
+          type: 'Graphic Design',
+          info: 'Have a passion for graphics and arts? Show your talents whit confidence and self-assertiveness'
+        },
+      ],
+
+      infoFooter: [
+        {
+          id: 'Address',
+          address: ['382 NE 191st ST # 87394 Miami, FL 33179-3899',
+          '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
+          'support@maxcoach.com'
+        ]
+        },
+        {
+          id: 'Explore',
+          address: [
+            'Start here',
+            'Blog',
+            'About us'
+          ]
+        },
+        {
+          id: '',
+          address: [
+            'Success story',
+            'Courses',
+            'Contact us'
+          ]
+        },
+        {
+          id: 'Information',
+          address: [
+            'Membership',
+            'Purchase guide',
+            'Privacy policy',
+            'Terms of services'
+          ]
+        }
+      ],
+
+      iconsSocial: [
+        'fab fa-facebook-square',
+        'fab fa-twitter',
+        'fab fa-instagram',
+        'fab fa-linkedin'
       ],
 
       counter: null,
