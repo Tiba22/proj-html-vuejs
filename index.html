@@ -28,8 +28,10 @@
   <div id="app">
 
     <header>
-      <div class="navbar w70">
-        <img src="img/light-logo.png" alt="">
+      <div class="navbar w70 fixed-top" :class="{change_color: scrollPosition > 600}">
+
+        <img src="img/light-logo.png" alt="logo" :class="{none: scrollPosition > 600}">
+        <img src="img/dark-logo.png" alt="logo" class="none" :class="{active: scrollPosition > 600}">
         <div class="boxright">
           <ul>
             <li v-for='(menù, index) in navBar'>
@@ -40,14 +42,16 @@
               </ul>
             </li>
           </ul>
-          <i class="cart fas fa-shopping-cart"><i class="fas fa-circle"><span>0</span></i></i>
+          <i class="cart fas fa-shopping-cart"><i class="fas fa-circle"><span :class="{white: scrollPosition > 600}">0</span></i></i>
           <i class="far fa-user-circle"></i>
-          <div class="searchbar">
-            <input type="text" placeholder="Search..." name="" id="">
+          <div class="searchbar" :class="{searchBlack: scrollPosition > 600}">
+            <input type="text" placeholder="Search..." name="">
             <i class="fas fa-search"></i>
           </div>
         </div>
       </div>   <!-- Fine Navbar -->
+
+      <a href="" @click='scrollToTop' class="scrollTop"><i class="far fa-arrow-alt-circle-up"></i></a>
 
       <div class="box-jumbo">
 
@@ -86,7 +90,7 @@
             </div>
           </div>
 
-          <div id="box-service">
+          <div id="divService">
 
             <div class="box-services-left w70">
 

@@ -3,6 +3,7 @@ function initVue() {
   var app = new Vue ({
     el: "#app",
     data: {
+
       navBar: [
         {
           type: 'Home',
@@ -154,51 +155,69 @@ function initVue() {
           '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
           'support@maxcoach.com'
         ]
-        },
-        {
-          id: 'Explore',
-          address: [
-            'Start here',
-            'Blog',
-            'About us'
-          ]
-        },
-        {
-          id: '',
-          address: [
-            'Success story',
-            'Courses',
-            'Contact us'
-          ]
-        },
-        {
-          id: 'Information',
-          address: [
-            'Membership',
-            'Purchase guide',
-            'Privacy policy',
-            'Terms of services'
-          ]
-        }
-      ],
+      },
+      {
+        id: 'Explore',
+        address: [
+          'Start here',
+          'Blog',
+          'About us'
+        ]
+      },
+      {
+        id: '',
+        address: [
+          'Success story',
+          'Courses',
+          'Contact us'
+        ]
+      },
+      {
+        id: 'Information',
+        address: [
+          'Membership',
+          'Purchase guide',
+          'Privacy policy',
+          'Terms of services'
+        ]
+      }
+    ],
 
-      iconsSocial: [
-        'fab fa-facebook-square',
-        'fab fa-twitter',
-        'fab fa-instagram',
-        'fab fa-linkedin'
-      ],
+    iconsSocial: [
+      'fab fa-facebook-square',
+      'fab fa-twitter',
+      'fab fa-instagram',
+      'fab fa-linkedin'
+    ],
 
-      counter: null,
+    counter: null,
+    scrollPosition: null,
+
+  },
+
+
+
+  methods: {
+
+    openMenù(index) {
+      (this.counter == index) ? this.counter = null : this.counter = index;
     },
 
+    scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    },
 
-    methods: {
-      openMenù(index){
-        (this.counter == index) ? this.counter = null : this.counter = index;
-      }
-    }
-  });
+    updateScroll() {
+      this.scrollPosition = window.scrollY
+    },
+
+  },
+
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
+  }
+
+});
 }
 
 function init() {

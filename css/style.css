@@ -1,3 +1,5 @@
+/* Regole Generali */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,27 +12,70 @@
   margin: auto;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.change_color {
+  color: black !important;
+  background-color: white !important;
+  box-shadow: 0 4px 2px -2px gray;
+  transition: 0.5s;
+}
+
+.white {
+  color: white !important;
+}
+
+.searchBlack {
+  border: 1px solid black !important;
+}
+
+.none {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* Regole Header */
+
 header {
   height: 650px;
   background-color: #1f2154;
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
-header .navbar{
-  padding: 10px 100px;
+header .navbar {
+  padding: 10px 50px;
   margin: auto;
   margin-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1f2154;
+  z-index: 999;
+  color: white;
+  transition: 0.5s;
 }
 
-header .navbar img{
+header .navbar img {
   height: 30px;
-  margin-right: 80px ;
 }
 
-header .navbar .boxright{
+header .navbar .boxright {
   display: flex;
   align-items: center;
 }
@@ -42,15 +87,14 @@ header .navbar .boxright ul {
 
 header .navbar .boxright ul li {
   margin: 10px;
-  color:white;
   cursor: pointer;
 }
 
-header .navbar .boxright ul li span{
+header .navbar .boxright ul li span {
   margin-right: 2px;
 }
 
-header .navbar .boxright ul li span:hover{
+header .navbar .boxright ul li span:hover {
   text-decoration: underline white;
 }
 
@@ -61,28 +105,27 @@ header .navbar .boxright ul li ul {
   margin-top: 15px;
 }
 
-header .navbar .boxright ul li ul li:hover{
+header .navbar .boxright ul li ul li:hover {
   text-decoration: underline white;
 }
 
 header .navbar .boxright i {
-  color: white;
   margin: 5px;
   cursor: pointer;
 }
 
-header .navbar .boxright i.cart{
+header .navbar .boxright i.cart {
   margin-left: -10px;
   margin-right: 10px;
 }
 
-header .navbar .boxright i.cart i{
+header .navbar .boxright i.cart i {
   position: absolute;
   margin-top:  -10px;
   margin-left: -6px;
 }
 
-header .navbar .boxright i.cart span{
+header .navbar .boxright i.cart span {
   position: absolute;
   color: black;
   margin-top: 2px;
@@ -90,7 +133,7 @@ header .navbar .boxright i.cart span{
   font-size: 13px;
 }
 
-header .navbar .boxright .searchbar{
+header .navbar .boxright .searchbar {
   height: 45px;
   display: flex;
   align-items: center;
@@ -100,35 +143,36 @@ header .navbar .boxright .searchbar{
   margin-left: 10px;
 }
 
-header .navbar .boxright .searchbar input{
+header .navbar .boxright .searchbar input {
   border: none;
   font-size: 15px;
 }
 
-header .navbar .boxright .searchbar input:focus{
+header .navbar .boxright .searchbar input:focus {
   outline: none;
 }
 
-header .navbar .boxright .searchbar i{
+header .navbar .boxright .searchbar i {
   color: #1fad96;
 }
 
-.hide{
-  opacity: 0;
+/* Regole Jumbo */
+
+.scrollTop {
+  position: fixed;
+  color: #1fad96;
+  font-size: 50px;
+  padding: 20px;
+  right: 30px;
+  bottom: 70px;
 }
 
-.show{
-  opacity: 1;
-}
-
-/* Fine NavBar */
-
-.box-jumbo{
+.box-jumbo {
   height: 571px;
   overflow:hidden ;
 }
 
-.box-jumbo #info-jumbo{
+.box-jumbo #info-jumbo {
   margin: auto;
   text-align: center;
   color: white;
@@ -136,18 +180,18 @@ header .navbar .boxright .searchbar i{
   padding-top: 100px;
 }
 
-.box-jumbo #info-jumbo h1{
+.box-jumbo #info-jumbo h1 {
   font-size: 50px;
 }
 
-.box-jumbo #info-jumbo p{
+.box-jumbo #info-jumbo p {
   padding-top: 20px;
   font-weight: bold;
   font-size: 16px;
   color: #bcbccb;
 }
 
-.box-jumbo #info-jumbo button{
+.box-jumbo #info-jumbo button {
   padding: 20px 40px;
   background-color: #1fad96;
   color: white;
@@ -164,7 +208,8 @@ header .navbar .boxright .searchbar i{
   color: #1fad96;
 }
 
-/*  */
+/* Regole Jumbo imgs */
+
 #jumbo-img{
   display: flex;
   margin-top: 100px;
@@ -172,7 +217,7 @@ header .navbar .boxright .searchbar i{
   height: 400px;
 }
 
-#jumbo-img div{
+#jumbo-img div {
   width: 50%;
   padding: 20px;
   background-color: white;
@@ -187,7 +232,6 @@ header .navbar .boxright .searchbar i{
   width: 100%;
   border-radius: 10px;
   transition: transform 2s;
-
 }
 
 #jumbo-img div img#img-center:hover {
@@ -202,20 +246,19 @@ header .navbar .boxright .searchbar i{
   cursor: pointer;
 }
 
-#jumbo-img img.img-left{
+#jumbo-img img.img-left {
   margin-left: 22px;
-  margin-top: -250px;
+  margin-top: -300px;
   height: 450px;
 }
 
-#jumbo-img img.img-right{
+#jumbo-img img.img-right {
   margin-left: 1100px;
   margin-top: -291px;
   height: 350px;
 }
 
-
-#main-top{
+#main-top {
   color: #333333;
   width: 100%;
   margin-top: 60px;
@@ -224,26 +267,27 @@ header .navbar .boxright .searchbar i{
   align-items: center;
 }
 
-#main-top h3{
+#main-top h3 {
   width: 900px;
   font-size: 30px;
   text-align: center;
   margin: 70px 0px 35px;
 }
 
-#main-top p{
+#main-top p {
   color: #7e7e7e;
   font-size: 14px;
   margin: 10px;
 }
 
-/* STYLE CCS: Info number  */
-#number-info{
+/* Regole infos  */
+
+#number-info {
   display: flex;
   margin: 70px;
 }
 
-#number-info .number-info-element{
+#number-info .number-info-element {
   width: 100%;
   margin: 25px;
   text-align: center;
@@ -258,89 +302,87 @@ header .navbar .boxright .searchbar i{
   transition: transform 1s;
 }
 
-#number-info .number-info-element p:hover{
+#number-info .number-info-element p:hover {
   transform: scale(1.3);
 }
 
-#number-info .number-info-element span{
+#number-info .number-info-element span {
   font-size: 12px;
   font-weight: bold;
 }
 
-/*  */
+/* Regole Services */
 
-#box-service{
+#divService {
   display: flex;
   width: 90%;
   justify-content: space-around;
 }
 
-#box-service .box-services-left{
+#divService .box-services-left {
   flex-basis: 40%;
   display: flex;
 }
 
-#box-service .box-services-left .service .cardtop, .cardbottom{
+#divService .box-services-left .service .cardtop, .cardbottom {
   margin: 15px;
   padding:5px 10px;
   box-shadow: 10px 10px 10px #ccc;
   width: 300px;
 }
 
-#box-service h4 {
+#divService h4 {
   font-size: 23px;
   color: #3F3A64;
   font-weight: bold;
   padding-top: 10px;
 }
 
-#box-service .box-services-left .service .cardtop p,
-#box-service .box-services-left .service .cardbottom p {
+#divService .box-services-left .service .cardtop p,
+#divService .box-services-left .service .cardbottom p {
   color: #696969;
   font-size: 15px;
 }
 
-#box-service .box-services-left .right{
+#divService .box-services-left .right {
   margin-top: 45px;
 }
 
-/*  */
-
-.serviceright{
+.serviceright {
   flex-basis: 40%;
 }
 
-.serviceright p{
+.serviceright p {
   margin: 10px 0px;
   color: #696969;
 }
 
-.serviceright h1{
+.serviceright h1 {
   width: 350px;
   font-size: 45px;
   margin-bottom: 40px;
 
 }
 
-.serviceright h1 span{
+.serviceright h1 span {
   color: #1fad96;
 }
 
-.serviceright ul{
+.serviceright ul {
   list-style: none;
 }
 
-.serviceright ul li{
+.serviceright ul li {
   margin: 10px 0px;
   color: #696969;
 }
 
-.serviceright ul li i{
+.serviceright ul li i {
   color: #1fad96;
   margin-right: 5px;
 }
 
-.serviceright button{
+.serviceright button {
   padding: 17px 45px;
   background-color: #1fad96;
   color: white;
@@ -351,17 +393,17 @@ header .navbar .boxright .searchbar i{
   transition: background-color 0.5s;
 }
 
-.serviceright button:focus{
+.serviceright button:focus {
   outline: none;
 }
 
-.serviceright button:hover{
+.serviceright button:hover {
   background-color: #293259;
 }
 
-/*  */
+/* Regole Courses */
 
-#containerCourses{
+#containerCourses {
   margin-top: 70px;
   padding-top: 50px;
   padding-bottom: 70px;
@@ -369,16 +411,16 @@ header .navbar .boxright .searchbar i{
   background-color: #F5F7FA;
 }
 
-#containerCourses .textCourses{
+#containerCourses .textCourses {
   margin: 50px;
 }
 
-#containerCourses .textCourses h2{
+#containerCourses .textCourses h2 {
   font-size: 50px;
   font-weight: bold;
 }
 
-#containerCourses .textCourses h2 span{
+#containerCourses .textCourses h2 span {
   color: #1fad96;
   font-weight: normal;
 }
@@ -436,11 +478,11 @@ header .navbar .boxright .searchbar i{
   color: #1fad96;
 }
 
-#cardCourses .course .info-course p span{
+#cardCourses .course .info-course p span {
   margin-right: 10px;
 }
 
-#containerCourses button{
+#containerCourses button {
   padding: 17px 60px;
   background-color: #1fad96;
   color: white;
@@ -451,11 +493,11 @@ header .navbar .boxright .searchbar i{
   transition: background-color 0.5s;
 }
 
-#containerCourses button:focus{
+#containerCourses button:focus {
   outline: none;
 }
 
-#containerCourses button:hover{
+#containerCourses button:hover {
   background-color: #293259;
 }
 
@@ -463,14 +505,14 @@ header .navbar .boxright .searchbar i{
   margin-left: 5px;
 }
 
-/*  */
+/* Regole Testimonial */
 
-#testimonial{
+#testimonial {
   margin: 50px;
   padding: 20px;
 }
 
-#testimonial h2{
+#testimonial h2 {
   margin: 30px;
   text-align: center;
   font-size: 45px;
@@ -507,35 +549,33 @@ header .navbar .boxright .searchbar i{
   font-weight: bold;
 }
 
-#testimonial .divTestimonial .infoTestimonial p{
+#testimonial .divTestimonial .infoTestimonial p {
   margin: 10px 0px;
   color: #7e7e7e;
 }
 
-/*  */
-
-#imgClients{
+#imgClients {
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
 }
 
-#imgClients img{
+#imgClients img {
   cursor: pointer;
   object-fit: contain;
 }
 
-#imgClients img:hover{
+#imgClients img:hover {
 
 }
 
-/*  */
+/* regole OurBlogs */
 
-#container-ourBlogs{
+#container-ourBlogs {
   background-color: #F8F8F8;
 }
 
-#container-ourBlogs .blogsText{
+#container-ourBlogs .blogsText {
   text-align: center;
   margin: 50px;
 }
@@ -545,12 +585,12 @@ header .navbar .boxright .searchbar i{
   margin-top: 30px;
 }
 
-#container-ourBlogs .blogsText h2 span{
+#container-ourBlogs .blogsText h2 span {
   color: #1fad96;
   font-weight: normal;
 }
 
-#container-ourBlogs .blogsText p{
+#container-ourBlogs .blogsText p {
   color: #696969;
   letter-spacing: 1px;
   font-size: 19px;
@@ -589,77 +629,77 @@ header .navbar .boxright .searchbar i{
   color: #20AD96;
 }
 
-#container-ourBlogs .cardBlogs .box-blog p{
+#container-ourBlogs .cardBlogs .box-blog p {
   margin-top: 20px;
   color: #696969;
 }
 
-#container-ourBlogs .cardBlogs .box-blog p span{
+#container-ourBlogs .cardBlogs .box-blog p span {
   margin-right: 70px;
 }
 
-/*  */
+/* Regole Help */
 
-#help{
+#help {
   width: 100%;
   height: auto;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(234, 237, 241, 0.8) 100%);
 }
 
-#help .help-text{
+#help .help-text {
   text-align: center;
   margin-bottom: 50px;
 }
 
-#help .help-text p{
+#help .help-text p {
   color: #696969;
   letter-spacing: 1px;
   font-size: 19px;
   margin-top: 100px;
 }
 
-#help .help-text h2{
+#help .help-text h2 {
   font-size: 50px;
 }
 
-#help .help-text h2 span{
+#help .help-text h2 span {
   color: #1fad96;
   font-weight: normal;
 }
 
-#help .containerHelp{
+#help .containerHelp {
   display: flex;
   justify-content: space-around;
 }
 
-#help .containerHelp .help-type{
+#help .containerHelp .help-type {
   padding: 10px;
   margin: 100px 10px 0 0;
   width: 270px;
   transition: background-color 0.3s, transform 0.5s;
 }
 
-#help .containerHelp .help-type:hover{
+#help .containerHelp .help-type:hover {
   background-color: #f6f3f6;
   cursor: pointer;
   border-radius: 5px;
   transform: scale(1.2);
 }
 
-#help .containerHelp .help-type i{
+#help .containerHelp .help-type i {
   font-size: 50px;
 }
 
-#help .containerHelp .help-type h4{
+#help .containerHelp .help-type h4 {
   margin: 20px 0px;
 }
 
-#help .containerHelp .help-type p{
+#help .containerHelp .help-type p {
   margin: 0px;
   color: #696969;
 }
 
-.center{
+.center {
   margin-top: 150px;
   display: block;
   margin-left: auto;
@@ -667,7 +707,7 @@ header .navbar .boxright .searchbar i{
   width: 50%;
 }
 
-/*  */
+/* Regole Start */
 
 
 #startNow {
@@ -705,7 +745,7 @@ header .navbar .boxright .searchbar i{
   cursor: pointer;
 }
 
-/*  */
+/* Regole Footer */
 
 
 .containerFooter {
