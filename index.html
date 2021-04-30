@@ -28,28 +28,31 @@
   <div id="app">
 
     <header>
-      <div class="navbar w70 fixed-top" :class="{change_color: scrollPosition > 600}">
+      <div class="containerHeader fixed-top"  :class="{change_color: scrollPosition > 600}">
 
-        <img src="img/light-logo.png" alt="logo" :class="{none: scrollPosition > 600}">
-        <img src="img/dark-logo.png" alt="logo" class="none" :class="{active: scrollPosition > 600}">
-        <div class="boxright">
-          <ul>
-            <li v-for='(menù, index) in navBar'>
-              <span>{{menù.type}}</span>
-              <i @click='openMenù(index)' class="fas fa-angle-down"></i>
-              <ul :class='(counter == index) ? "show" : "hide"' >
-                <li v-for = '(tendina, i) in menù.menu'>{{tendina}}</li>
-              </ul>
-            </li>
-          </ul>
-          <i class="cart fas fa-shopping-cart"><i class="fas fa-circle"><span :class="{white: scrollPosition > 600}">0</span></i></i>
-          <i class="far fa-user-circle"></i>
-          <div class="searchbar" :class="{searchBlack: scrollPosition > 600}">
-            <input type="text" placeholder="Search..." name="">
-            <i class="fas fa-search"></i>
+        <div class="navbar w70 ">
+
+          <img src="img/light-logo.png" alt="logo" :class="{none: scrollPosition > 600}">
+          <img src="img/dark-logo.png" alt="logo" class="none" :class="{active: scrollPosition > 600}">
+          <div class="boxright">
+            <ul>
+              <li v-for='(menù, index) in navBar'>
+                <span>{{menù.type}}</span>
+                <i @click='openMenù(index)' class="fas fa-angle-down"></i>
+                <ul :class='(counter == index) ? "show" : "hide"' >
+                  <li v-for = '(tendina, i) in menù.menu'>{{tendina}}</li>
+                </ul>
+              </li>
+            </ul>
+            <i class="cart fas fa-shopping-cart"><i class="fas fa-circle"><span :class="{white: scrollPosition > 600}">0</span></i></i>
+            <i class="far fa-user-circle"></i>
+            <div class="searchbar" :class="{searchBlack: scrollPosition > 600}">
+              <input type="text" placeholder="Search..." name="">
+              <i class="fas fa-search"></i>
+            </div>
           </div>
-        </div>
-      </div>   <!-- Fine Navbar -->
+        </div>   <!-- Fine Navbar -->
+      </div>
 
       <a href="" @click='scrollToTop' class="scrollTop"><i class="far fa-arrow-alt-circle-up"></i></a>
 

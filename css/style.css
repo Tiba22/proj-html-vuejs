@@ -51,6 +51,14 @@
 }
 
 /* Regole Header */
+.containerHeader {
+  width: 100%;
+  background-color: #1f2154;
+  height: 66px;
+  z-index: 999;
+  transition: 0.5s;
+  color: white;
+}
 
 header {
   height: 650px;
@@ -65,10 +73,7 @@ header .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1f2154;
   z-index: 999;
-  color: white;
-  transition: 0.5s;
 }
 
 header .navbar img {
